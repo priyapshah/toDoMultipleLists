@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* Page Setup */
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: #97052F;
+    color: #ffffff;
+    display: grid;
+    grid: "header header header header" auto 
+    "...... lists  active ......" auto/
+    1fr minmax(100px, 400px) minmax(250px, 500px) 1fr;
+  }
+  
+
+  .title{grid-area: header;
+    text-align: center;
+    font-size: calc(7vw + 2rem);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    margin: -0.3em 0 0.5em;}
+
+
+    /* Lists */
+  .allLists{
+    grid-area: lists;
+  }
+
+  .taskList{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    padding-left: 1.1em;
+    cursor: pointer;
+  }
+
+  .task{
+      word-wrap: break-word;
+      color: #97052F;
+      font-size: 1.5rem;
+  }
+
+  .singleToDoList{
+    --spacer: 2rem;
+  grid-area: active;
+  background: #e4e4e4;
+  color: #ffffff;
+  }
+
+  .activeList {
+    font-weight: 700;
+  }
+
+
+  .listHeader{
+    padding: 0.5em;
+    background: #e4e4e4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+  }
+
+  .toDoBody{
+    padding: var(--spacer);
+    position: relative;
+  }
+
+  .listTitle {
+    margin: 0 1em 0 0;
+  }
+
+  form {
+    display: flex;
+}
+
+.listName{
+    cursor: pointer;
+}
+
+.listName:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+/* new and buttons */
+
+.newList {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    outline: none;
+    padding: 0.25em;
+    transition: border-bottom 150ms ease-in;
+    order: 2;
+    font-size: 1rem;
+    
+  }
+
+  .newTask {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    outline: none;
+    padding: 0.25em;
+    transition: border-bottom 150ms ease-in;
+    order: 2;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+  .listButton{
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+    transition: opacity 250ms ease-in;
+  }
+
+  .taskButton{
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+    transition: opacity 250ms ease-in;
+    color: #000000;
+  }
+
+  .deleteButton{
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 2.5em;
+    color: inherit;
+    opacity: 0.7;
+    font-size: 1rem;
+    transition: color 200ms;
+    color: #000000;
+  }
+
+  .deleteButton:hover {
+    color: #97052F;
+  }
+
+  
