@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> To Do </title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <h1 class="title">Stuff I Need To Do</h1>
+
+    <div class="allLists">
+        <!--Side sections of lists-->
+        <h2 class="listTitles">My Lists</h2>
+        <!--Title of lists section-->
+        <ul class="taskList" data-lists></ul>
+        <form action="" data-new-list-form>
+            <!--Adds a new list-->
+            <input type="text" class="newList" placeholder="New List Name" aria-label="New List Name" data-new-list-input/>
+            <button class="listButton" aria-label="Create New List">+</button>
+            <!--Button to Add a New List-->
+        </form>
+    </div>
+
+
+    <div class="singleToDoList" data-list-display-container>
+        <!--Active To Do List-->
+        <div class="listHeader">
+            <!--Header of the list-->
+            <h2 class="listTitle" data-list-title></h2>
+            <p class="taskCount" data-list-count></p>
+        </div>
+        <div class="toDoBody"> <!--Main Section of the ToDo List-->
+            <div class="tasks" data-tasks></div>
+            <div class="addNewTask">
+                <form action="" data-new-task-form>
+                    <!--Adds a new task-->
+                    <input type="text" class="newTask" placeholder="New Task" aria-label="New Task" data-new-task-input/>
+                    <button class="taskButton" aria-label="Create New Task">+</button>
+                    <!--Button to Add a New Task-->
+                </form>
+            </div>
+            <div class="deleteTask">
+                <button class="deleteButton" data-clear-complete-tasks-button>Clear Completed Tasks</button>
+                <button class="deleteButton" data-delete-list-button>Delete List</button>
+            </div>
+        </div>
+    </div>
+    <template id="task-template">
+        <div class="task">
+            <input type="checkbox"/> <!--Adds a checkbox to each task-->
+            <label> <!--allows user to click text-->
+                <span class="customCheck"></span>
+            </label> 
+        </div>
+    </template>
+    <script defer src="main.js"></script>
+</body>
+
+
+</html>
