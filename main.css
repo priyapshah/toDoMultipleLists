@@ -15,18 +15,20 @@ body {
     color: #ffffff;
     display: grid;
     grid: "header header header header" auto 
-    "...... lists  active ......" auto/
+    "... date date ..." auto
+    "none none none none"
+    "... lists  active ..." auto/
     1fr minmax(100px, 400px) minmax(250px, 500px) 1fr;
   }
   
 
   .title{grid-area: header;
     text-align: center;
-    font-size: calc(7vw + 2rem);
+    font-size: 6rem;
     font-weight: 900;
     color: rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
-    margin: -0.3em 0 0.5em;}
+    margin: 0 0.5em;}
 
 
     /* Lists */
@@ -158,5 +160,13 @@ body {
   .deleteButton:hover {
     color: #97052F;
   }
+
+  h3 {
+    grid-area: date;
+    text-align: center;
+    
+  }
+
+  
 
   
