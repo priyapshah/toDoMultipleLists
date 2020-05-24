@@ -145,6 +145,10 @@ body {
     color: #000000;
   }
 
+  input[type=checkbox]:checked + label{
+    text-decoration: line-through;
+  }
+
   .deleteButton{
     cursor: pointer;
     background: 0;
