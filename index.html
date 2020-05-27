@@ -19,8 +19,8 @@
         <ul class="taskList" taskLists></ul>
         <form action="" formNewList>
             <!--Adds a new list-->
-            <input type="text" class="newList" placeholder="New List Name" aria-label="New List Name" inputNewList/>
             <button class="listButton" aria-label="Create New List">+</button>
+            <input type="text" class="newList" placeholder="New List Name" aria-label="New List Name" inputNewList/>
             <!--Button to Add a New List-->
         </form>
     </div>
@@ -28,26 +28,40 @@
 
     <div class="singleToDoList" currList>
         <!--Active To Do List-->
+
+
         <div class="listHeader">
             <!--Header of the list-->
             <h2 class="listTitle" listTitle></h2>
             <p class="taskCount" listCount></p>
         </div>
+
+
         <div class="toDoBody"> <!--Main Section of the ToDo List-->
             <div class="tasks" currTasks></div>
+
             <div class="addNewTask">
                 <form action="" newTaskForm>
                     <!--Adds a new task-->
-                    <input type="text" class="newTask" placeholder="New Task" aria-label="New Task" newTaskInput/>
-                    <button class="taskButton" aria-label="Create New Task">+</button>
+                    
+                    <button class="taskButton" aria-label="Create New Task" >+</button>
+                    <input type="text" class="newTask" placeholder="New Task" aria-label="New Task" newTaskInput tabIndex="1"/>
+                    <input type="date" newDateInput tabIndex="2"/>
+                   
+                    
                     <!--Button to Add a New Task-->
+                    
                 </form>
             </div>
+
+
             <div class="deleteTask">
                 <button class="deleteButton" clearTasks>Clear Completed Tasks</button>
                 <button class="deleteButton" deleteList>Delete List</button>
             </div>
         </div>
+
+
     </div>
     <template id="task-template">
         <div class="task">
@@ -55,6 +69,7 @@
             <label> <!--allows user to click text-->
                 <span class="customCheck"></span>
             </label> 
+            
         </div>
     </template>
     <script defer src="main.js"></script>
