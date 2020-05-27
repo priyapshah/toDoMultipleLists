@@ -62,7 +62,7 @@ body {
 
 
   .listHeader{
-    padding: 0.5em;
+    padding: 1em;
     background: #e4e4e4;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ body {
     margin: 0 1em 0 0;
   }
 
-
+  
 .listName{
     cursor: pointer;
 }
@@ -171,3 +171,5 @@ body {
     background: inherit;
     border: none;
   }
+
+  
