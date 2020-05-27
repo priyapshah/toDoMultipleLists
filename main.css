@@ -79,9 +79,6 @@ body {
     margin: 0 1em 0 0;
   }
 
-  form {
-    display: flex;
-}
 
 .listName{
     cursor: pointer;
@@ -168,4 +165,9 @@ body {
   h3 {
     grid-area: date;
     text-align: center;
+  }
+
+  input[type="date"] {
+    background: inherit;
+    border: none;
   }
