@@ -60,6 +60,9 @@ body {
     font-weight: 700;
   }
 
+form {
+    display: inline;
+  }
 
   .listHeader{
     padding: 1em;
