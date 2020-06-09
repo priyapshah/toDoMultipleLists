@@ -24,5 +24,3 @@ In order to declutter To-Do lists and clear completed tasks, users may simply cl
 
 ### Delete a List
 Users have the option to delete lists by navigating to the list they wish to delete in the "My Lists" section and clicking on "Delete List" under the "New Task" form. Note: Once a list has been deleted, it cannot be retrieved. 
-
--
