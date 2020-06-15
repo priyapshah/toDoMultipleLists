@@ -141,6 +141,7 @@ function renderTasks(selectedList) {
     label.htmlFor = task.id
     if (task.date != "") {
     label.append(task.date+": ")
+    //label.style.fontWeight = "400";
     }
     label.append(task.name)
     currTasks.appendChild(taskElement)
@@ -150,7 +151,7 @@ function renderTasks(selectedList) {
 function renderTaskCount(selectedList) {
   const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
   const taskString = incompleteTaskCount === 1 ? "Task" : "Tasks"
-  listCount.innerText = `${incompleteTaskCount} ${taskString} Remaining`
+  listCount.innerText = `Only ${incompleteTaskCount} More ${taskString} Left!`
 }
 
 function renderLists() {

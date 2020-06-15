@@ -17,7 +17,7 @@ body {
     "... date date ..." auto
     "none none none none"
     "... lists  active ..." auto/
-    1fr minmax(100px, 400px) minmax(500px, 600px) 1fr;
+    1fr minmax(100px, 400px) 600px 1fr;
   }
   
 
@@ -64,7 +64,8 @@ form {
   }
 
   .listHeader{
-    padding: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
     background: #e4e4e4;
     display: flex;
     align-items: center;
@@ -72,22 +73,26 @@ form {
     color: #000000;
   }
 
+  .listCount {
+    background: #e4e4e4;
+    text-align: center;
+    justify-content: space-between;
+    color: #000000;
+  }
+
   .toDoBody{
-    padding: var(--spacer);
+    padding-left: 1em;
     position: relative;
+    word-break: break-word;
   }
 
   .listTitle {
     margin: 0 1em 0 0;
   }
 
-  
-.listName{
-    cursor: pointer;
-}
 
 .listName:hover{
-    opacity: 0.5;
+    opacity: 0.2;
     cursor: pointer;
 }
 /* new and buttons */
@@ -117,6 +122,11 @@ form {
     margin-bottom: 0;
     font-size: 1.5rem;
     color: #000000;
+  }
+
+  .addNewTask input {
+    display: inline-block;
+    word-break: break-word;
   }
 
   .listButton{
