@@ -151,7 +151,8 @@ function renderTasks(selectedList) {
 function renderTaskCount(selectedList) {
   const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
   const taskString = incompleteTaskCount === 1 ? "Task" : "Tasks"
-  listCount.innerText = `Only ${incompleteTaskCount} More ${taskString} Left!`
+  const tasksLeft = incompleteTaskCount <= 20 ? `${incompleteTaskCount}` : "A (Little More Than A) Few"
+  listCount.innerText = `Only ${tasksLeft} More ${taskString} Left!`
 }
 
 function renderLists() {
