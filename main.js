@@ -140,7 +140,7 @@ function renderTasks(selectedList) {
     const label = taskElement.querySelector('label')
     label.htmlFor = task.id
     if (task.date != "") {
-    label.append(task.date+": ")
+    label.append(task.date.substring(5, 10) +": ")
     //label.style.fontWeight = "400";
     }
     label.append(task.name)

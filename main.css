@@ -18,6 +18,11 @@ body {
     "none none none none"
     "... lists  active ..." auto/
     1fr minmax(100px, 400px) 600px 1fr;
+  
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
   
 
